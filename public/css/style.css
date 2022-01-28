@@ -1,0 +1,210 @@
+body {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #0070bb;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: crimson;
+}
+
+.bouton {
+    border-radius: 5px;
+    border-color: #0070bb;
+    background-color: rgb(143, 160, 211);
+}
+
+.bouton:hover {
+    background-color: #0070bb;
+    color: white;
+}
+
+.lien {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(226, 1, 140);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 700px;
+    border: 2px solid rgb(207, 1, 226);
+    background-color: rgb(19, 18, 19);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.lien:hover {
+    color: white;
+    background-color: rgb(211, 78, 16);
+    border: 2px solid rgb(211, 78, 16);
+}
+
+.division {
+    display: flex;
+}
+
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    background-color: darkslategrey;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 40px 30px;
+    font-size: 19px;
+    color: white;
+}
+
+nav ul li:hover a {
+    padding: 35px 30px 20px 30px;
+}
+
+
+nav li:hover .liste {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.liste {
+    display: none;
+}
+
+.liste li {
+    border-bottom: 1px solid #ccc;
+}
+
+.liste li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+
+.compte:hover {
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.contrat:hover {
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.faute:hover {
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.compte .liste {
+    background-color: rgb(230, 100, 40);
+}
+
+.contrat .liste {
+    background-color: rgb(000, 160, 240);
+}
+
+.faute .liste {
+    background-color: rgb(250, 215, 100);
+}
+
+.liste li:hover a {
+    color: #eee;
+    font-weight: bold;
+}
+
+.compte .liste li:hover {
+    background-color: rgb(210, 77, 60);
+}
+
+.contrat .liste li:hover {
+    background-color: rgb(000, 115, 200);
+}
+
+.faute .liste li:hover {
+    background-color: rgb(200, 165, 75);
+}
+
+
+legend {
+    color: rgb(22, 22, 22);
+    padding: 8px 6px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: brown;
+}
+
+.output {
+    font: 1rem 'Courier New', Courier, monospace;
+}
+
+input {
+    margin: .4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+fieldset {
+    border-radius: 5px;
+    margin: 4px 10px;
+}
+
+.connec {
+    position: absolute;
+    bottom: 2px;
+    left: 550px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(226, 1, 140);
+    font-size: 25px;
+    border: 2px solid rgb(207, 1, 226);
+    background-color: rgb(19, 18, 19);
+    padding:7px 7px;
+    border-radius: 5px;
+}
+
+.ind {
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(226, 1, 140);
+    font-size: 25px;
+    border: 2px solid rgb(226, 1, 140);
+    background-color: rgb(19, 18, 19);
+    padding: 40px 20px;
+    border-radius: 5px;
+}
