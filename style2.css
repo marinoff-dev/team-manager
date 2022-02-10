@@ -1,0 +1,94 @@
+body {
+    font-size:15px;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+h1 {
+    color: rgb(2, 128, 245);
+    margin-top: 0;
+    padding-top: 10px;
+}
+h2 {
+    color: rgb(2, 128, 245);
+    margin-top: 15px;
+    padding-top: 10px;
+    font-style: italic;
+}
+form {
+    padding-top: 15px;
+}
+
+label {
+    position: absolute;
+    left:625px;
+
+}
+
+input {
+    width:432px;
+    height:40px;
+    border-radius: 5px;
+    border:solid 2px #468ee0;
+    margin-bottom:10px;
+}
+
+
+
+.div1 {
+    text-align: left;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    margin:0;
+}
+
+.poste {
+    display: flex;
+    margin-top: 0;
+}
+
+#div2 {
+    margin-top: 0;
+    padding: 30px 15px;
+    height: 600px;
+    background-color: #468ee0;
+    color: white;
+}
+
+#div3 {
+    margin: 5px 250px;
+}
+
+.bouton {
+    background-color: #468ee0;
+}
+
+.bouton:hover {
+    background-color: #468ee0;
+    color: white;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 20px 10px;
+    text-align: center;
+}
+ a {
+    text-decoration: none;
+    padding: 30px 10px;
+    color: white;
+ }
+
+
+ /*<select>
+        <?php
+            require('model.php');
+            $db=new crud();
+            $req = $crud->get_query($table='employe');
+            foreach($req as $row)
+            {
+            echo '<option value = '.$row['numemp'].'>'.$row['nomemp']. ' '. $row['preemp'].'</option>';
+            }
+        ?>
+    </select>*/
