@@ -7,7 +7,7 @@
 		{
 			$table='employe'; $field='nomemp, preemp, datemb, durcont'; $value='?,?,?,?'; $data=$_POST['nomemp'].','.$_POST['preemp'].','.$_POST['datemb'].','.$_POST['durcont'];
 			$db->add($table, $field, $value, $data);
-			 header("location:newcont.php");
+			 //header("location:newcont.php");
 		}elseif(isset($_POST['btn']) && $_POST['btn']=='modifier')
 		{
 			$db->updata($_POST['nomemp'], $_POST['preemp'], $_POST['datemb'], $_POST['durcont'], $_POST['numemp']);
@@ -50,7 +50,6 @@
 		{
 			$db->updata($_POST['datedem'], $_POST['durinit'], $_POST['datefinrel'], $_POST['employe'], $_POST['numcont']);
 		}
-
 		if(isset($_GET['task'])&& $_GET['task']=='supprimer')
 		{
 			$db->del($_GET['key']);
@@ -60,8 +59,9 @@
 			$tab=explode(',', $_GET['data']); 
 		}else{	
 			$tab=array(null,null,null,null);
-		}}*/
+		}*/
+	}
 		
 		require('newcont.php');	 
-	}
+		
 
