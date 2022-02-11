@@ -16,7 +16,7 @@
                     <ul>
                         <li><a href="newemp.php?controller=employe">Enregistrer un employé</a></li>
                         <li><a href="newcont.php?controller=contrat">Enregistrer un contrat</a></li>
-                        <li><a href="renouvel.php?controller=renouvellement">Renouveler un contrat</a></li>
+                        <li><a href="renouvel.php?controller=contrat">Renouveler un contrat</a></li>
                         <li><a href="liste.php">Liste des contrats</a></li>
                         <li><a href="">Liste des contrats à échéance</a></li>
                         <li><a href="">Liste des contrats à t</a></li>
