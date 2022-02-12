@@ -10,6 +10,8 @@
     <input name="nomemp" type="text" placeholder="entrer le nom" /> </br></br>
     <label for="prenom">Prénom:</label></br>
     <input name="preemp" type="text" placeholder="entrer le prenom" /> </br></br>
+    <label for="prenom">Date de naissance:</label></br>
+    <input name="datenais" type="date"/> </br></br>
     <label for="emb">Date d'embauche:</label></br>
     <input name="datemb" type="date" /> </br></br>
     <label for="durcont">Durée du contrat:</label></br>

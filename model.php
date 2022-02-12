@@ -21,11 +21,11 @@
 			$req=$db->query('SELECT '.$field.' FROM '.$table);
 			return $req;
 		}
-        public function updata($nomemp, $preemp, $datemb, $durcont, $numemp)
+        public function updata($nomemp, $preemp, $datenais, $datemb, $durcont, $numemp)
 		{
 			$db=$this->ctdb();
-			$req=$db->prepare('UPDATE member SET nomemp=?, preemp=?, datemb=? durcont=? WHERE numemp=?');
-			$req->execute(array($nomemp, $preemp, $datemb, $durcont, $numemp));
+			$req=$db->prepare('UPDATE member SET nomemp=?, preemp=?, datenais=?, datemb=?, durcont=? WHERE numemp=?');
+			$req->execute(array($nomemp, $preemp, $datenais, $datemb, $durcont, $numemp));
 		}
 		public function lister()
 			{
@@ -35,6 +35,12 @@
 			$req=$db->query($query);
 			return $req;
 		}
+		public function rechercher($table, $field, $value, $data)
+		{
+			$db=$this->ctdb();
+			$req=$db->prepare('SELECT '.$field.' FROM '.$table.' WHERE datedem='.$value);
+			$req->execute(explode(',', $data));
+			return $req;
+		}
 	}
-
 

@@ -18,8 +18,8 @@
                         <li><a href="newcont.php?controller=contrat">Enregistrer un contrat</a></li>
                         <li><a href="renouvel.php?controller=contrat">Renouveler un contrat</a></li>
                         <li><a href="liste.php">Liste des contrats</a></li>
-                        <li><a href="">Liste des contrats à échéance</a></li>
-                        <li><a href="">Liste des contrats à t</a></li>
+                        <li><a href="echeance.php">Liste des contrats à échéance</a></li>
+                        <li><a href="rechercher.php">Liste des contrats à t</a></li>
                         <li><a href="">Enregistrer une faute</a></li>
                         <li><a href="">Liste des employés les plus fautifs</a></li>
                         <li><a href="deconnexion.php">Quitter la session</a></li>

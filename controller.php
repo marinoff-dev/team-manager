@@ -5,12 +5,12 @@
 		$db=new crud();
 		if(isset($_POST['btn'])&& $_POST['btn']=='Valider')
 		{
-			$table='employe'; $field='nomemp, preemp, datemb, durcont'; $value='?,?,?,?'; $data=$_POST['nomemp'].','.$_POST['preemp'].','.$_POST['datemb'].','.$_POST['durcont'];
+			$table='employe'; $field='nomemp, preemp, datenais, datemb, durcont'; $value='?,?,?,?,?'; $data=$_POST['nomemp'].','.$_POST['preemp'].','.$_POST['datenais'].','.$_POST['datemb'].','.$_POST['durcont'];
 			$db->add($table, $field, $value, $data);
 			 header("location:newcont.php");
 		}elseif(isset($_POST['btn']) && $_POST['btn']=='modifier')
 		{
-			$db->updata($_POST['nomemp'], $_POST['preemp'], $_POST['datemb'], $_POST['durcont'], $_POST['numemp']);
+			$db->updata($_POST['nomemp'], $_POST['preemp'], $_POST['datenais'], $_POST['datemb'], $_POST['durcont'], $_POST['numemp']);
 		}
 
 		if(isset($_GET['task'])&& $_GET['task']=='supprimer')
@@ -38,7 +38,6 @@
 			$fin = $_POST['datefin'];
 			$dure = $_POST['dur'];
 			$emp = $_POST['numemp'];
-
 			$table='contrat'; 
 			$field='datedem, durinit, datefinrel, employe';
 			$value='?,?,?,?'; 
@@ -46,9 +45,9 @@
 			$db->add($table, $field, $value, $data);
 			header('location:newcont.php');
 		}
-		elseif(isset($_POST['btn']) && $_POST['btn']=='modifier')
+		/*elseif(isset($_POST['btn']) && $_POST['btn']=='modifier')
 		{
-			$db->updata($_POST['datedem'], $_POST['durinit'], $_POST['datefinrel'], $_POST['employe'], $_POST['numcont']);
+			$db->updata($_POST['date'], $_POST['dur'], $_POST['datefin'], $_POST['numemp'], $_POST['numco']);
 		}
 		if(isset($_GET['task'])&& $_GET['task']=='supprimer')
 		{
@@ -59,10 +58,17 @@
 			$tab=explode(',', $_GET['data']); 
 		}else{	
 			$tab=array(null,null,null,null);
-		}
+		}*/
 		require('newcont.php');	 
 	}
-		
-		
+	
+	function research() {
+		$db=new crud();
+		if(isset($_POST['btn']) && $_POST['btn']=='Valider') {
+		$table='contrat'; $field='*'; $value='?'; $data=$_POST['rec'];
+		$req=$db->rechercher($table, $field, $value, $data);
+		}
+	}
+			
 		
 
