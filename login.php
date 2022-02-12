@@ -14,7 +14,7 @@
             $tab=$res->fetch();
             $_SESSION["autoriser"]="oui";
             $_SESSION["nomprenom"]=$tab["nomus"]." ".$tab["premus"];
-            header("location: session.php");
+            header("location:session.php");
         }
     }
 ?>

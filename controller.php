@@ -7,7 +7,7 @@
 		{
 			$table='employe'; $field='nomemp, preemp, datemb, durcont'; $value='?,?,?,?'; $data=$_POST['nomemp'].','.$_POST['preemp'].','.$_POST['datemb'].','.$_POST['durcont'];
 			$db->add($table, $field, $value, $data);
-			 //header("location:newcont.php");
+			 header("location:newcont.php");
 		}elseif(isset($_POST['btn']) && $_POST['btn']=='modifier')
 		{
 			$db->updata($_POST['nomemp'], $_POST['preemp'], $_POST['datemb'], $_POST['durcont'], $_POST['numemp']);
@@ -44,9 +44,9 @@
 			$value='?,?,?,?'; 
 			$data=$dem.','.$dure.','.$fin.','.$emp;
 			$db->add($table, $field, $value, $data);
-			header("location:liste.php");
+			header('location:newcont.php');
 		}
-		/*elseif(isset($_POST['btn']) && $_POST['btn']=='modifier')
+		elseif(isset($_POST['btn']) && $_POST['btn']=='modifier')
 		{
 			$db->updata($_POST['datedem'], $_POST['durinit'], $_POST['datefinrel'], $_POST['employe'], $_POST['numcont']);
 		}
@@ -59,9 +59,10 @@
 			$tab=explode(',', $_GET['data']); 
 		}else{	
 			$tab=array(null,null,null,null);
-		}*/
+		}
+		require('newcont.php');	 
 	}
 		
-		require('newcont.php');	 
+		
 		
 

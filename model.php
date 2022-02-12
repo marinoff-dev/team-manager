@@ -30,7 +30,7 @@
 		public function lister()
 			{
 			$db=$this->ctdb();
-			$today = date("Y-m-d");
+			//$today = date("Y-m-d");
 			$query = 'SELECT * FROM contrat';
 			$req=$db->query($query);
 			return $req;

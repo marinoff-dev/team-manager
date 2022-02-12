@@ -23,7 +23,7 @@
 
             echo ' </select>';
             
-        ?>
+    ?>
         <br><br>
     <label for="dem">Date de démarrage:</label></br>
     <input name="date" type="date" id="dem" /> </br></br>
