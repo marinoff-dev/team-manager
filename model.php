@@ -46,7 +46,7 @@ class crud
 	}
 	public function listfaut() {
 		$db=$this->ctdb();
-		$req=$db->query('SELECT ');
+		$req=$db->query('SELECT * FROM employe');
 		return $req;
 	}
 }
