@@ -30,7 +30,7 @@
     <body>
         <header>
             <h1>Authentification</h1>
-            <a href="inscription.php">S'inscrire</a>
+            <a href="index.php">S'inscrire</a>
         </header>
         <form method="POST" action="login.php">
             <label for="prenom">Login:</label><br/>

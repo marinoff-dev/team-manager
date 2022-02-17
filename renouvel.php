@@ -16,25 +16,21 @@
             $db=new crud();
             $employe=$db->read($table='employe', $field='*');
             while($value= $employe->fetch()) {
-                
                 echo ('<option value='.$value['numemp'].'>'.$value['nomemp'].' '.$value['preemp'].'</option>');
-
             }
-
             echo ' </select>';
             
-        ?>
+    ?>
         <br><br>
     <label for="dem">Date de démarrage:</label></br>
     <input name="date" type="date" id="dem" /> </br></br>
 
     <label for="init">Durée initiale:</label></br>
-    <input name="dur" type="tel" id="init"/> </br></br>
+    <input name="dur" type="tel" id="init" /> </br></br>
 
     <label for="fin">Date de fin réelle:</label></br>
     <input name="datefin" type="date" id="fin" /> </br></br>
-
-    <input class="bouton" type="submit" name="btn" value="Valider" />
+    <input class="bouton" type="submit" name="btn" value="Modifier" />
             
 </form>
 

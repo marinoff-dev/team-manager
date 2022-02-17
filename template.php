@@ -20,8 +20,8 @@
                         <li><a href="liste.php">Liste des contrats</a></li>
                         <li><a href="echeance.php">Liste des contrats à échéance</a></li>
                         <li><a href="rechercher.php">Liste des contrats à t</a></li>
-                        <li><a href="">Enregistrer une faute</a></li>
-                        <li><a href="">Liste des employés les plus fautifs</a></li>
+                        <li><a href="faute.php">Enregistrer une faute</a></li>
+                        <li><a href="listef.php">Liste des employés les plus fautifs</a></li>
                         <li><a href="deconnexion.php">Quitter la session</a></li>
                     </ul>
                 </div>
