@@ -23,13 +23,13 @@
     ?>
         <br><br>
     <label for="dem">Date de démarrage:</label></br>
-    <input name="date" type="date" id="dem" /> </br></br>
+    <input name="date" type="date" id="dem" required="" /> </br></br>
 
     <label for="init">Durée initiale:</label></br>
-    <input name="dur" type="tel" id="init"/> </br></br>
+    <input name="dur" type="tel" id="init" required="" /> </br></br>
 
     <label for="fin">Date de fin réelle:</label></br>
-    <input name="datefin" type="date" id="fin" /> </br></br>
+    <input name="datefin" type="date" id="fin" required="" /> </br></br>
     <input class="bouton" type="submit" name="btn" value="Valider" />
             
 </form>

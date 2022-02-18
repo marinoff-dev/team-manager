@@ -51,7 +51,7 @@ input {
 #div2 {
     margin-top: 0;
     padding: 30px 15px;
-    height: 600px;
+    height: 650px;
     background-color: #468ee0;
     color: white;
 }
@@ -79,16 +79,3 @@ nav ul li {
     padding: 30px 10px;
     color: white;
  }
-
-
- /*<select>
-        <?php
-            require('model.php');
-            $db=new crud();
-            $req = $crud->get_query($table='employe');
-            foreach($req as $row)
-            {
-            echo '<option value = '.$row['numemp'].'>'.$row['nomemp']. ' '. $row['preemp'].'</option>';
-            }
-        ?>
-    </select>*/

@@ -55,13 +55,13 @@
             <label for="prenom">Prénom:</label></br>
             <input name="prenom" type="text" placeholder="entrer votre prénom" value="<?php echo $prenom?>" /> </br></br>
             <label for="log">Login:</label></br>
-            <input name="login" type="text" placeholder="entrer votre nom d'utilisateur" value="<?php echo $login?>" /> </br></br>
+            <input name="login" type="text" placeholder="entrer votre nom d'utilisateur" value="<?php echo $login?>" required="" /> </br></br>
             <label for="mail">Email:</label></br>
-            <input name="mail" type="email" placeholder="entrer votre mail" value="<?php echo $mail?>" /> </br></br>
+            <input name="mail" type="email" placeholder="entrer votre mail" value="<?php echo $mail?>" required="" /> </br></br>
             <label for="mdp">Mot de passe:</label></br>
-            <input name="mdp" type="password" placeholder="entrer votre mot de passe" value="<?php echo $mdp?>" /> </br><br>
+            <input name="mdp" type="password" placeholder="entrer votre mot de passe" value="<?php echo $mdp?>" required="" /> </br><br>
             <label for="mdp">Confirmer le mot de passe:</label></br>
-            <input name="repass" type="password" placeholder="confirmer le mot de passe" value="<?php echo $repass?>" /> </br><br>
+            <input name="repass" type="password" placeholder="confirmer le mot de passe" value="<?php echo $repass?>" required="" /> </br><br>
             <input class="bouton" type="submit" name="btn" value="S'inscrire" />
         </form>
         <?php if(!empty($message)){ ?>

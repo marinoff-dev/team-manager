@@ -34,9 +34,9 @@
         </header>
         <form method="POST" action="login.php">
             <label for="prenom">Login:</label><br/>
-            <input name="login" type="text" placeholder="entrer votre nom d'utilisateur" value="<?php echo $login?>" /> </br><br/>
+            <input name="login" type="text" placeholder="entrer votre nom d'utilisateur" value="<?php echo $login?>"  required="" /> </br><br/>
             <label for="mdp">Mot de passe:</label><br/>
-            <input name="mdp" type="password" placeholder="entrer votre mot de passe" value="<?php echo $mdp?>" /> </br><br/>
+            <input name="mdp" type="password" placeholder="entrer votre mot de passe" value="<?php echo $mdp?>" required="" /> </br><br/>
             <input class="bouton" type="submit" name="btn" value="S'authentifier" />
         </form>
         <?php if(!empty($message)){ ?>

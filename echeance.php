@@ -1,4 +1,3 @@
-
 <?php ob_start(); ?>
 <?php
         require('model.php');
@@ -26,24 +25,9 @@
 		}
         echo '</table>';
 
-
-        $to  = $mailus;
-        $subject = 'Liste des contrats venus à échéance';
-        $message = '';
-
-        $headers[] = 'MIME-Version: 1.0';
-        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
-        $headers[] = 'To: Mary <mary@example.com>, Kelly <kelly@example.com>';
-        $headers[] = 'From: Anniversaire <anniversaire@example.com>';
-        $headers[] = 'Cc: anniversaire_archive@example.com';
-        $headers[] = 'Bcc: anniversaire_verif@example.com';
-   
-        mail($to, $subject, $message, implode("\r\n", $headers));
-
 ?>
 <?php
-	$content = ob_get_clean();
+    $content = ob_get_clean();
 	require('template.php');
+    require('envoimail.php');
 ?>
-
- 

@@ -4,7 +4,7 @@
         $db=new crud();
         $pq=$db->listfaut();
         echo '<h2>Liste des employés les plus fautifs</h2>';
-        echo '<table border="1" width="150" >';
+        echo '<table border="1" width="250" >';
 		echo '<tr><th>Numéro de l\'employé</th><th>Nom</th><th>Prénom</th><th>Date_de_naissance</th><th>Date_embauche</th></tr>';
 		while($dt=$pq->fetch())
 		{	
